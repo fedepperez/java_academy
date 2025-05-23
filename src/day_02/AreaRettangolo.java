@@ -2,6 +2,13 @@ package day_02;
 
 import java.util.Scanner;
 
+/*
+* Esercizio 02
+* Area di un Rettangolo
+* Traccia: Scrivi un programma Java che chieda all'utente di inserire la
+* lunghezza e la larghezza di un rettangolo e stampi l'area corrispondente.
+*/
+
 public class AreaRettangolo {
 	
 	public static void main(String[] args) {
