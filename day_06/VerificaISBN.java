@@ -12,6 +12,7 @@ public class VerificaISBN {
 	public static boolean isValidISBN(String isbn) {
 		// Rimuoviamo i trattini
 		isbn = isbn.replace("-", "");
+		isbn = isbn.replace(" ", "");
 
 		// Deve essere lungo esattamente 10 caratteri
 		if (isbn.length() != 10) {
@@ -25,6 +26,7 @@ public class VerificaISBN {
 			int valore;
 
 			// Se è l'ultima cifra ed è 'X', vale 10
+			isbn = isbn.toUpperCase();
 			if (i == 9 && c == 'X') {
 				valore = 10;
 			} else if (Character.isDigit(c)) {
